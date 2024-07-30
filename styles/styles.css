@@ -65,9 +65,14 @@ body{
     align-items: center;
     margin-top: 57px;
 }
+
+.navitems{
+    gap: 47px;
+}
 .navitem{
     list-style: none;
-    margin-right: 47px;
+    padding: 12px 0;
+    /* margin-right: 47px; */
 }
 
 .navlink{
