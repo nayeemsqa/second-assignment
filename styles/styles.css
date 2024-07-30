@@ -1,0 +1,157 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap');
+
+
+.inter-normal {
+    font-family: "Inter", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 400;
+    font-style: normal;
+}
+
+
+/* Shared styles */
+*{
+    margin: 0;
+    padding: 0;
+}
+
+main > section{
+    margin-top: 100px;
+}
+
+body{
+    max-width: 1440px;
+    margin: 0 auto;
+    background: linear-gradient(180deg, #111111 0%, rgba(119, 119, 119, 0) 100%);
+    background-repeat: no-repeat;
+}
+
+.display-flex{
+    display: flex;
+}
+
+.text-primary{
+    font-size: 1.125rem;
+    font-weight: 600;
+    color: rgba(255, 255, 255, 1);
+}
+
+.text-secondary{
+    font-size: 0.8rem;
+    font-weight: 400;
+    color: rgba(255, 255, 255, 0.5);
+}
+
+.section-title{
+    font-size: 3rem;
+    font-weight: 900;
+    margin-top: 0px;
+    margin-bottom: 0px;
+    color: rgba(255, 255, 255, 1);
+    margin-bottom: 14px;
+}
+
+/* navbar styles */
+
+.header-title{
+    font-size: 2.25rem;
+    font-style: italic;
+    font-weight: 800;
+    color: rgba(230, 83, 60, 1);
+}
+
+.navbar{
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 57px;
+}
+.navitem{
+    list-style: none;
+    margin-right: 47px;
+}
+
+.navlink{
+    text-decoration: none;
+    /* color: rgba(255, 255, 255, 1); */
+}
+
+.navbar a{
+    color: rgba(255, 255, 255, 1);
+}
+
+.navbar ul{
+    border: 1px solid rebeccapurple;
+    padding: 12px 20px;
+    border-radius: 39px;
+    /* text-align: center; */
+}
+
+
+/* Change your habits styles */
+.change-habits-content{
+    max-width: 1056px;
+    margin: 0 auto;
+    text-align: center;
+}
+
+.habits-description{
+    max-width: 671px;
+    margin: 0 auto;
+}
+
+.habits-image-container-cards{
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 40px;
+    margin-top: 58px;
+}
+
+.habits-image-container-cards img{
+    max-width: 100%;
+    border: 4px solid rgba(255, 255, 255, 0.1);
+    border-radius: 50%;
+}
+
+.habits-image-card{
+    text-align: center;
+}
+
+.habits-card-title{
+    margin-top: 12px;
+    margin-bottom: 6px;
+}
+
+.habits-card-description{
+    max-width: 230px;
+    margin: 0 auto;
+    line-height: 18px;
+}
+
+
+/* Smaller device responsiveness */
+
+@media screen and (max-width : 576px) {
+    .habits-image-container-cards{
+        grid-template-columns: 1fr;
+    }
+    .section-title{
+        font-size: 2rem;
+    }
+    .habits-description{
+        max-width: 316px;
+        margin: 0 auto;
+    }
+}
+
+
+/* Medium device responsive */
+
+@media screen and (min-width: 576px) and (max-width: 992px){
+    .habits-image-container-cards{
+        grid-template-columns: repeat(2, 1fr);
+    }
+    .habits-description{
+        max-width: 475px;
+        margin: 0 auto;
+    }
+}
