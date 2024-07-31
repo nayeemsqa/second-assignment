@@ -1,6 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap');
 
 
+
 .inter-normal {
     font-family: "Inter", sans-serif;
     font-optical-sizing: auto;
@@ -55,6 +56,20 @@ body{
     max-width: 1056px;
     margin: 0 auto;
     text-align: center;
+    color: rgba(255, 255, 255, 1);
+}
+
+.btn-primary{
+    font-size: 0.8rem;
+    font-weight: 600;
+    padding: 16px 40px;
+    border-radius: 42px;
+    color: rgba(255, 255, 255, 1);
+    background-color: rgba(230, 83, 60, 1);
+    border: none;
+}
+.header-btns{
+
 }
 
 /* navbar styles */
@@ -95,6 +110,59 @@ body{
     padding: 12px 20px;
     border-radius: 39px;
     /* text-align: center; */
+}
+
+
+/* Banner section styles */
+.banner-title{
+    font-size: 4.875rem;
+    font-weight: 900;
+    color: rgba(255, 255, 255, 1);
+    margin-bottom: 28px;
+}
+.banner-description{
+    margin-top: 28px;
+    margin-bottom: 28px;
+}
+.banner-content{
+    /* max-width: 520px;
+    margin: 0 auto; */
+}
+.banner{
+    margin-top: 58px;
+    justify-content: space-around;
+}
+.banner img{
+    max-width: 100%;
+}
+#header-shape-text{
+    font-style: italic;
+    font-size: 4.75rem;
+}
+
+.workout-videos-badge{
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    padding: 17px 24px;
+    max-width: 193px;
+    border-radius: 12px;
+    background-color: rgba(255, 255, 255, 0.1);
+}
+.video-tutorial-badge{
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    padding: 23px 20px;
+    max-width: 206px;
+    border-radius: 12px;
+    background-color: rgba(255, 255, 255, 0.1);
+}
+.video-tutorial-title{
+    font-size: 2.5rem;
+    font-weight: 900;
+    color: rgba(255, 255, 255, 1);
+}
+.video-tutorial-description{
+    font-size: 0.8125rem;
+    font-weight: 400;
+    color: rgba(255, 255, 255, 0.65);
 }
 
 
@@ -141,11 +209,11 @@ body{
 .team-image-container{
     display: grid;
     grid-template-columns: repeat(3, 1fr);
-    margin-top: 58px;
     gap: 20px;
     background-color: rgba(255, 255, 255, 0.1);
     padding: 20px;
     border-radius: 18px;
+    margin-top: 58px;
 }
 .trainer-content{
 
@@ -189,6 +257,12 @@ body{
     .habits-description{
         max-width: 316px;
         margin: 0 auto;
+    }
+    .banner{
+        flex-direction: column;
+    }
+    .header-btns{
+        text-align: center;
     }
 }
 
