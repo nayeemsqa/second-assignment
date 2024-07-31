@@ -20,11 +20,19 @@ main > section{
     margin-top: 100px;
 }
 
-body{
-    max-width: 1440px;
-    margin: 0 auto;
+header{
     background: linear-gradient(180deg, #111111 0%, rgba(119, 119, 119, 0) 100%);
     background-repeat: no-repeat;
+}
+
+body{
+    background-color: black;
+}
+
+main{
+    max-width: 1440px;
+    margin: 0 auto;
+    /* background: black; */
 }
 
 .display-flex{
@@ -74,6 +82,11 @@ body{
 
 /* navbar styles */
 
+.navbar{
+    max-width: 1060px;
+    margin: 0 auto;
+}
+
 .header-title{
     font-size: 2.25rem;
     font-style: italic;
@@ -84,7 +97,7 @@ body{
 .navbar{
     justify-content: space-between;
     align-items: center;
-    margin-top: 57px;
+    padding: 57px;
 }
 
 .navitems{
@@ -114,6 +127,11 @@ body{
 
 
 /* Banner section styles */
+.banner{
+    /* margin: 58px 140px 0px 190px; */
+    align-items: center;
+    justify-content: space-around;
+}
 .banner-title{
     font-size: 4.875rem;
     font-weight: 900;
@@ -125,44 +143,69 @@ body{
     margin-bottom: 28px;
 }
 .banner-content{
-    /* max-width: 520px;
-    margin: 0 auto; */
+    max-width: 520px;
 }
-.banner{
-    margin-top: 58px;
-    justify-content: space-around;
+.banner-image{
+ 
 }
 .banner img{
     max-width: 100%;
+}
+.header-btns{
+    display: flex;
+    gap: 20px;
 }
 #header-shape-text{
     font-style: italic;
     font-size: 4.75rem;
 }
-
-.workout-videos-badge{
+.badge-styles{
     border: 1px solid rgba(255, 255, 255, 0.1);
-    padding: 17px 24px;
-    max-width: 193px;
     border-radius: 12px;
     background-color: rgba(255, 255, 255, 0.1);
 }
-.video-tutorial-badge{
+
+.banner-image{
+    position: relative;
+}
+
+.workout-videos-badge{
+    position: absolute;
+    padding: 17px 24px;
+    margin-left: -60px;
+    margin-top: -150px;
+    /* max-width: 193px; */
     border: 1px solid rgba(255, 255, 255, 0.1);
+}
+.video-tutorial-badge{
+    position: absolute;
+    margin-left: 150px;
+    margin-top: -357px;
     padding: 23px 20px;
-    max-width: 206px;
-    border-radius: 12px;
-    background-color: rgba(255, 255, 255, 0.1);
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    /* max-width: 206px; */
 }
 .video-tutorial-title{
     font-size: 2.5rem;
     font-weight: 900;
     color: rgba(255, 255, 255, 1);
+    margin-bottom: 8px;
 }
 .video-tutorial-description{
     font-size: 0.8125rem;
     font-weight: 400;
     color: rgba(255, 255, 255, 0.65);
+}
+.workout-badge-title{
+    font-size: 1.5rem;
+    font-weight: 900;
+    color: rgba(250, 250, 249, 1);
+    margin-bottom: 8px;
+}
+.workout-badge-description{
+    font-size: 1rem;
+    font-weight: 400;
+    color: rgba(239, 237, 232, 0.65);
 }
 
 
