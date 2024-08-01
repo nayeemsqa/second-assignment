@@ -259,6 +259,13 @@ main{
     gap: 165px;
 }
 
+.run-content{
+    max-width: 50%;
+}
+.run-image{
+    max-width: 50%;
+}
+
 .run-title{
     font-size: 4rem;
     font-weight: 900;
@@ -271,9 +278,11 @@ main{
 }
 
 .run-container img{
-    max-width: 100%;
+    width: 100%;
     border-radius: 18px;
 }
+
+
 
 /* BMI calculator section styles */
 .bmi-container{
@@ -380,6 +389,18 @@ th {
     .banner,
     .run-container{
         flex-direction: column;
+    }
+    .run-container{
+        align-items: center;
+        gap: 50px;
+        padding: 20px;
+        margin-left: 20px;
+        margin-right: 20px;
+       
+    }
+    .run-content,
+    .run-image{
+        max-width: 100%;
     }
     .header-btns{
         text-align: center;
