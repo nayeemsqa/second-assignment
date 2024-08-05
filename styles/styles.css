@@ -14,6 +14,7 @@
 *{
     margin: 0;
     padding: 0;
+    /* border: 1px solid red; */
 }
 
 main > section{
@@ -27,6 +28,7 @@ header{
 
 body{
     background-color: black;
+    /* border: 2px solid dotted yellow; */
 }
 
 main{
@@ -280,6 +282,25 @@ main{
 .run-container img{
     width: 100%;
     border-radius: 18px;
+}
+
+/* Trainer and exercise container section */
+.training-container img{
+    height: 200px;
+    width: 100%;
+    object-fit: cover;
+}
+.trainer-exercise-container{
+    margin-top: 58px;
+}
+
+.first-row{
+    display: grid;
+    grid-template-columns: 1fr 2fr 1fr;
+}
+.second-row{
+    display: grid;
+    grid-template-columns: 2fr 1fr 2fr;
 }
 
 
